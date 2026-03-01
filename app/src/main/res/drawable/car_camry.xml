@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp" android:height="200dp"
+    android:viewportWidth="400" android:viewportHeight="200">
+  <path android:fillColor="#1A2235" android:pathData="M0,0 L400,0 L400,200 L0,200 Z"/>
+  <!-- Road -->
+  <path android:fillColor="#243044" android:pathData="M0,140 L400,140 L400,200 L0,200 Z"/>
+  <!-- Car body -->
+  <path android:fillColor="#4A9EFF" android:pathData="M60,110 Q80,75 130,70 L270,70 Q320,75 340,110 L340,140 L60,140 Z"/>
+  <!-- Roof -->
+  <path android:fillColor="#2E7FE8" android:pathData="M130,70 Q160,45 200,42 Q240,45 270,70 Z"/>
+  <!-- Windows -->
+  <path android:fillColor="#B3D9FF" android:pathData="M135,72 L185,72 L185,95 L135,95 Z" android:strokeColor="#4A9EFF" android:strokeWidth="2"/>
+  <path android:fillColor="#B3D9FF" android:pathData="M190,72 L265,72 L265,95 L190,95 Z" android:strokeColor="#4A9EFF" android:strokeWidth="2"/>
+  <!-- Wheels -->
+  <path android:fillColor="#0A0E1A" android:pathData="M115,140 A28,28 0 1 1 115,139.9 Z"/>
+  <path android:fillColor="#555" android:pathData="M115,140 A18,18 0 1 1 115,139.9 Z"/>
+  <path android:fillColor="#E8FF00" android:pathData="M115,140 A6,6 0 1 1 115,139.9 Z"/>
+  <path android:fillColor="#0A0E1A" android:pathData="M285,140 A28,28 0 1 1 285,139.9 Z"/>
+  <path android:fillColor="#555" android:pathData="M285,140 A18,18 0 1 1 285,139.9 Z"/>
+  <path android:fillColor="#E8FF00" android:pathData="M285,140 A6,6 0 1 1 285,139.9 Z"/>
+  <!-- Headlight -->
+  <path android:fillColor="#E8FF00" android:pathData="M335,115 L345,112 L345,122 L335,122 Z"/>
+  <!-- Tail light -->
+  <path android:fillColor="#FF4D6A" android:pathData="M55,115 L65,115 L65,122 L55,122 Z"/>
+  <!-- Logo text -->
+  <path android:fillColor="#FFFFFF" android:pathData="M180,155 L220,155 L220,162 L180,162 Z" android:fillAlpha="0.3"/>
+</vector>

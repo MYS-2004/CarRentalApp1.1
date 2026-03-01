@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DriveNow</string>
+
+    <!-- Auth -->
+    <string name="login_title">أهلاً بعودتك</string>
+    <string name="login_subtitle">سجّل دخولك للمتابعة</string>
+    <string name="email_hint">البريد الإلكتروني</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="login_btn">تسجيل الدخول</string>
+    <string name="register_btn">إنشاء حساب جديد</string>
+    <string name="no_account">ليس لديك حساب؟</string>
+
+    <!-- Register -->
+    <string name="register_title">إنشاء حساب</string>
+    <string name="name_hint">الاسم الكامل</string>
+    <string name="phone_hint">رقم الهاتف</string>
+    <string name="confirm_password_hint">تأكيد كلمة المرور</string>
+
+    <!-- Home -->
+    <string name="welcome_prefix">مرحباً،</string>
+    <string name="search_hint">ابحث عن سيارة…</string>
+    <string name="featured_cars">سيارات مميزة</string>
+    <string name="all_categories">الكل</string>
+    <string name="available">متاحة</string>
+    <string name="unavailable">محجوزة</string>
+
+    <!-- Categories -->
+    <string name="cat_all">الكل</string>
+    <string name="cat_family">عائلية</string>
+    <string name="cat_suv">SUV</string>
+    <string name="cat_economy">اقتصادية</string>
+    <string name="cat_luxury">فاخرة</string>
+    <string name="cat_electric">كهربائية</string>
+    <string name="cat_sport">سباق</string>
+
+    <!-- Car Details -->
+    <string name="book_now">احجز الآن</string>
+    <string name="add_favorite">إضافة للمفضلة</string>
+    <string name="remove_favorite">إزالة من المفضلة</string>
+    <string name="per_day">$ / يوم</string>
+    <string name="specs_title">المواصفات</string>
+    <string name="fuel_type">نوع الوقود</string>
+    <string name="transmission">ناقل الحركة</string>
+    <string name="seats">عدد المقاعد</string>
+
+    <!-- Booking -->
+    <string name="pickup_date">تاريخ الاستلام</string>
+    <string name="return_date">تاريخ الإرجاع</string>
+    <string name="total_days">عدد الأيام</string>
+    <string name="total_price">السعر الإجمالي</string>
+    <string name="confirm_booking">تأكيد الحجز</string>
+    <string name="booking_confirmed">تم تأكيد الحجز بنجاح!</string>
+    <string name="date_format_hint">اختر تاريخاً</string>
+
+    <!-- My Bookings -->
+    <string name="my_bookings">حجوزاتي</string>
+    <string name="active_bookings">نشطة</string>
+    <string name="past_bookings">منتهية</string>
+    <string name="status_active">نشط</string>
+    <string name="status_ended">منتهي</string>
+
+    <!-- Favorites -->
+    <string name="favorites_title">المفضلة</string>
+    <string name="no_favorites">لا توجد سيارات في المفضلة</string>
+
+    <!-- Profile -->
+    <string name="profile_title">الملف الشخصي</string>
+    <string name="save_changes">حفظ التعديلات</string>
+    <string name="changes_saved">تم حفظ التعديلات بنجاح</string>
+
+    <!-- Settings -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="change_language">تغيير اللغة</string>
+    <string name="notifications_label">الإشعارات</string>
+    <string name="dark_mode_label">الوضع الليلي</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="logout_confirm">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+
+    <!-- Common -->
+    <string name="back">رجوع</string>
+    <string name="loading">جارٍ التحميل…</string>
+    <string name="error_fill_fields">يرجى ملء جميع الحقول</string>
+    <string name="error_date_invalid">تاريخ الإرجاع يجب أن يكون بعد تاريخ الاستلام</string>
+    <string name="dollar_per_day">$ / يوم</string>
+    <string name="currency_symbol">$</string>
+</resources>

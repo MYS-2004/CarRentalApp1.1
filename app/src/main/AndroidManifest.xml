@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CarRentalApp">
+
+        <activity android:name=".SplashActivity" android:exported="true"
+            android:theme="@style/Theme.CarRentalApp.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OnboardingActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".LoginActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".RegisterActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".HomeActivity" android:exported="false" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".CarDetailsActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".BookingActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".BookingConfirmationActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".MyBookingsActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".FavoritesActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".ProfileActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".SettingsActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".RatingActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".FilterActivity" android:exported="false" android:screenOrientation="portrait"/>
+
+        <receiver android:name=".NotificationHelper$BookingReminderReceiver"
+            android:exported="false"/>
+    </application>
+</manifest>

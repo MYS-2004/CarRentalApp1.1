@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp" android:height="200dp"
+    android:viewportWidth="400" android:viewportHeight="200">
+  <path android:fillColor="#0D1520" android:pathData="M0,0 L400,0 L400,200 L0,200 Z"/>
+  <path android:fillColor="#162030" android:pathData="M0,145 L400,145 L400,200 L0,200 Z"/>
+  <!-- SUV body (taller) -->
+  <path android:fillColor="#2C3E50" android:pathData="M50,110 Q70,65 120,60 L280,60 Q330,65 350,110 L350,145 L50,145 Z"/>
+  <!-- Roof flat -->
+  <path android:fillColor="#1A2535" android:pathData="M120,60 L280,60 L275,40 L125,40 Z"/>
+  <!-- Windows -->
+  <path android:fillColor="#4A6FA5" android:pathData="M130,62 L185,62 L183,42 L132,42 Z" android:fillAlpha="0.8"/>
+  <path android:fillColor="#4A6FA5" android:pathData="M190,62 L270,62 L268,42 L192,42 Z" android:fillAlpha="0.8"/>
+  <!-- Grill -->
+  <path android:fillColor="#E8FF00" android:pathData="M345,100 L358,97 L358,115 L345,115 Z" android:fillAlpha="0.9"/>
+  <!-- Wheels bigger -->
+  <path android:fillColor="#0A0E1A" android:pathData="M110,145 A30,30 0 1 1 110,144.9 Z"/>
+  <path android:fillColor="#444" android:pathData="M110,145 A20,20 0 1 1 110,144.9 Z"/>
+  <path android:fillColor="#E8FF00" android:pathData="M110,145 A7,7 0 1 1 110,144.9 Z"/>
+  <path android:fillColor="#0A0E1A" android:pathData="M290,145 A30,30 0 1 1 290,144.9 Z"/>
+  <path android:fillColor="#444" android:pathData="M290,145 A20,20 0 1 1 290,144.9 Z"/>
+  <path android:fillColor="#E8FF00" android:pathData="M290,145 A7,7 0 1 1 290,144.9 Z"/>
+  <!-- BMW badge area -->
+  <path android:fillColor="#E8FF00" android:pathData="M192,100 A8,8 0 1 1 192,99.9 Z" android:fillAlpha="0.5"/>
+</vector>

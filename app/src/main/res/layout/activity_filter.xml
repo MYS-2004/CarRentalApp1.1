@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backButton"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_icon_button"
+                app:icon="@android:drawable/ic_menu_revert"
+                app:iconTint="@color/text_primary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فلترة البحث"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/resetBtn"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مسح"
+                android:textColor="@color/accent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Price Range -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نطاق السعر اليومي"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/priceRangeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0$ - 300$"
+            android:textSize="13sp"
+            android:textColor="@color/accent"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/priceSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="300"
+            android:progress="300"
+            android:progressTint="@color/accent"
+            android:thumbTint="@color/accent"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- Transmission -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ناقل الحركة"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/transmissionGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            android:layout_marginBottom="28dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAllTrans"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الكل"
+                android:checked="true"
+                app:chipBackgroundColor="@color/accent"
+                android:textColor="@color/primary"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAutomatic"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="أوتوماتيك"
+                app:chipBackgroundColor="@color/surface_card"
+                app:chipStrokeColor="@color/border"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/text_secondary"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipManual"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="يدوي"
+                app:chipBackgroundColor="@color/surface_card"
+                app:chipStrokeColor="@color/border"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/text_secondary"/>
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Fuel Type -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نوع الوقود"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/fuelGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            android:layout_marginBottom="28dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAllFuel"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الكل"
+                android:checked="true"
+                app:chipBackgroundColor="@color/accent"
+                android:textColor="@color/primary"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipGasoline"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⛽ بنزين"
+                app:chipBackgroundColor="@color/surface_card"
+                app:chipStrokeColor="@color/border"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/text_secondary"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipElectric"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚡ كهربائي"
+                app:chipBackgroundColor="@color/surface_card"
+                app:chipStrokeColor="@color/border"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/text_secondary"/>
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Availability -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.CarRental.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="السيارات المتاحة فقط"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_primary"/>
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/availableSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:thumbTint="@color/accent"
+                    app:trackTint="@color/surface_input"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Apply -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/applyFilterBtn"
+            style="@style/Widget.CarRental.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="تطبيق الفلتر"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
