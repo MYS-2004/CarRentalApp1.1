@@ -53,7 +53,6 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.CarViewHolder> {
         CarEntity car     = carList.get(position);
         Context   context = holder.itemView.getContext();
 
-        // Text fields
         if (holder.name     != null) holder.name.setText(car.name);
         if (holder.price    != null) holder.price.setText((int) car.pricePerDay + " $");
         if (holder.model    != null) holder.model.setText(car.model);
@@ -61,7 +60,6 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.CarViewHolder> {
         if (holder.fuel     != null) holder.fuel.setText("كهربائي".equals(car.fuelType) ? "⚡" : "⛽");
         if (holder.image    != null) holder.image.setImageResource(getCarImage(car.name));
 
-        // Availability badge
         if (holder.availBadge != null) {
             if (car.available) {
                 holder.availBadge.setText("متاحة");

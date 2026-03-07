@@ -18,7 +18,6 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        // Fade in animation for logo
         TextView logoIcon = findViewById(R.id.logoIcon);
         TextView appName  = findViewById(R.id.appName);
 
@@ -50,9 +49,8 @@ public class SplashActivity extends AppCompatActivity {
                 intent = new Intent(this, LoginActivity.class);
             }
             startActivity(intent);
-            // No animation between splash and next screen = clean transition
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             finish();
-        }, 1800);
+        }, 2000);
     }
 }

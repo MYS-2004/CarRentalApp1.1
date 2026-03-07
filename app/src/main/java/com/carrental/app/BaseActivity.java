@@ -7,10 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-/**
- * Base class for all activities with BottomNavigationView.
- * Ensures consistent navigation, null-safety, and no animation flicker on tab switch.
- */
+
 public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
@@ -22,7 +19,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottomNav);
         if (bottomNav == null) return;
 
-        // Set selected without triggering the listener
         bottomNav.setSelectedItemId(selectedItemId);
 
         bottomNav.setOnItemSelectedListener(item -> {
